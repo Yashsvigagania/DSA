@@ -1,5 +1,4 @@
-import java.util.*;
-public class treeDiameter {
+public class DiameterOfTree {
     static int diameter;
     static int height(String[] arr,int i){
         if(i>=arr.length||arr[i].equals("N")){
