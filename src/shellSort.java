@@ -5,6 +5,10 @@ public class shellSort {
         int n=sc.nextInt();
         sc.nextLine();
         String[] line= sc.nextLine().split(" ");
+        if(line.length!=n){
+            System.out.println("-1");
+            return;
+        }
         int[] arr=new int[n];
         for(int i=0;i<n;i++){
             arr[i]=Integer.parseInt(line[i]);
@@ -22,7 +26,7 @@ public class shellSort {
             }
         }
         for(int i=0;i<n-1;i++){
-            System.out.println(arr[i]+" ");
+            System.out.print(arr[i]+" ");
         }
         if(n>0){
             System.out.println(arr[n-1]);
