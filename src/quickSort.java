@@ -1,18 +1,20 @@
 import java.util.*;
 public class quickSort {
-    public static void partition(int[] arr,int low,int high){
+    public static int partition(int[] arr,int low,int high){
         int pivot=arr[high];
         int i=low-1;
         for(int j=low;j<high;j++){
             if(arr[j]<pivot){
+                i++;
                 int temp=arr[i];
                 arr[i]=arr[j];
                 arr[j]=temp;
             }
         }
         int temp=arr[i+1];
-        arr[i+1]=arr[pivot];
-        arr[pivot]=arr[i+1];
+        arr[i+1]=arr[high];
+        arr[high]=arr[i+1];
+        return i+1;
     }
     public static void quickSortt(int[] arr,int low,int high){
         if(low<high){
