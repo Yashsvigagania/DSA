@@ -35,7 +35,7 @@ public class mergeSort {
         }
     }
     public static void mergeSortt(int[] arr,int low,int high){
-        if(low<=high){
+        if(low<high){
             int mid=low+(high-low)/2;
             mergeSortt(arr,low,mid);
             mergeSortt(arr,mid+1,high);
