@@ -1,10 +1,6 @@
-
 /*[1 2 1 3] → distinct = 3
-
 [2 1 3 4] → distinct = 4
-
 [1 3 4 2] → distinct = 4
-
 [3 4 2 3] → distinct = 3
  */
 import java.util.*;
