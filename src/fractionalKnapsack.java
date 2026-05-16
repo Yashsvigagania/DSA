@@ -27,7 +27,7 @@ public class fractionalKnapsack {
                 capacity-=item.weight;
             }
             else{
-                maxValue=item.ratio*capacity;
+                maxValue+=item.ratio*capacity;
                 break;
             }
         }
