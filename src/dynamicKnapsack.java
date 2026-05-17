@@ -12,7 +12,7 @@ public class dynamicKnapsack {
         for(int i=0;i<n;i++){
             weight[i]=sc.nextInt();
         }
-        int[][] dp=new int[n][n];
+        int[][] dp=new int[n+1][m+1];
         for(int i=1;i<=n;i++){
             for(int w=1;w<=m;w++){
                 if(weight[i-1]<=w){
