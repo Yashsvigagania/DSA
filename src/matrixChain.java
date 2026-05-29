@@ -12,6 +12,7 @@ public class matrixChain {
             for(int i=1;i<n-L+1;i++){
                 int j=i+L-1;
                 dp[i][j]=Integer.MAX_VALUE;
+
                 for(int k=i;k<j;k++){
                     int cost=dp[i][k]+dp[k+1][j]+arr[i-1]*arr[k]*arr[j];
                     if(cost<dp[i][j]){
